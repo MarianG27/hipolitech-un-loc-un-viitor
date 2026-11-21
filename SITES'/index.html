@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1040df">
+  <meta name="description" content="Un cămin, un nou destin. La POLI, viitorul e senin. Descoperă campania HIPOLITECH pentru un nou cămin studențesc și testează un simulator demonstrativ de contribuție.">
+  <title>Un cămin, un nou destin | HIPOLITECH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body>
+  <a class="skip" href="#main">Sari la conținut</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#acasa" aria-label="HIPOLITECH, acasă"><img class="brand-logo" src="assets/hipolitech-logo.svg" alt="HIPOLITECH — Fundația Politehnica"></a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Deschide meniul"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="nav" aria-label="Navigare principală">
+        <a href="#acasa">Acasă</a><a href="#simulator">Cum poți ajuta</a><a href="#transparenta">Transparență</a><a href="model-financiar.html">Model financiar</a>
+      </nav>
+      <div class="header-actions"><button id="sound-toggle" class="sound-toggle" type="button" aria-pressed="true" aria-label="Dezactivează sunetul butoanelor">♫</button><a class="button button-primary header-cta" href="https://fundatia.upb.ro/proiecte-si-evenimente/un-loc-in-camin-poate-schimba-un-destin/" target="_blank" rel="noopener noreferrer">Vezi campania oficială <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </header>
+  <main id="main">
+    <section id="acasa" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Un cămin,<br>un nou destin.<br><span class="highlight">La POLI,<br>viitorul e senin.</span></h1>
+          <p>Pentru un student, un loc în cămin înseamnă mai mult decât cazare. Înseamnă <strong>stabilitate, comunitate și șansa de a se concentra asupra viitorului.</strong></p>
+          <div class="hero-actions"><a class="button button-primary" href="#simulator">Descoperă cum poți ajuta <span aria-hidden="true">↓</span></a><a class="button button-outline" href="#despre">Despre proiect</a></div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Ilustrație conceptuală a unei clădiri de cămin studențesc; nu reprezintă proiectul final de construcție">
+          <div class="art-image"></div><span class="art-mortar" aria-hidden="true">⌁</span><span class="art-swoosh" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+    <section id="despre" class="story-section section-gap">
+      <div class="container story-grid"><div class="section-heading"><h2>Marile povești<br>încep undeva.</h2><span class="underline-swoosh" aria-hidden="true"></span></div>
+      <div class="story-card"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M24 10c-5-4-12-4-18-2v27c8-2 14 0 18 3 4-3 10-5 18-3V8c-6-2-13-2-18 2Zm0 0v28" stroke-linejoin="round"/></svg><h3>Un loc pentru studiu</h3><p>Un mediu stabil, unde performanța are spațiu să crească.</p></div>
+      <div class="story-card"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="24" cy="12" r="6"/><path d="M12 38v-5c0-7 5-12 12-12s12 5 12 12v5M9 19a6 6 0 0 0-3 11M39 19a6 6 0 0 1 3 11" stroke-linecap="round"/></svg><h3>Un spațiu pentru comunitate</h3><p>Prieteni, idei și proiecte care prind viață împreună.</p></div>
+      <div class="story-card"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M17 30c-2-7 1-16 19-23 3 18-4 22-12 24l-7-1Z"/><path d="m19 29-8 8 2-9-8-2 10-8M27 22l-8 8M12 39l-3 5"/><circle cx="30" cy="16" r="2"/></svg><h3>O șansă pentru viitor</h3><p>Mai mult timp pentru învățare, dezvoltare și oportunități reale.</p></div></div>
+    </section>
+    <section id="simulator" class="sim-section section-gap">
+      <div class="container"><div class="sim-panel">
+        <div class="sim-intro"><h2>Descoperă<br>puterea<br><span>contribuției tale</span></h2><div class="sim-underline"></div><p>Explorează în câteva secunde un scenariu demonstrativ de susținere a campaniei.</p></div>
+        <div class="sim-flow" aria-label="Simulator demonstrativ de contribuție">
+          <ol class="steps" aria-label="Etapele simulatorului"><li class="active" data-step-marker="1"><span>1</span>Cine ești?</li><li data-step-marker="2"><span>2</span>Contribuție</li><li data-step-marker="3"><span>3</span>Rezultat</li></ol>
+          <div class="step-content" id="step-one"><h3>Cine ești?</h3><fieldset class="profile-choices"><legend class="sr-only">Selectează profilul</legend><label class="choice"><input name="profile" type="radio" value="absolvent" checked><span class="choice-icon" aria-hidden="true">♧</span><span>Absolvent<br>POLITEHNICA</span><span class="radio-icon"></span></label><label class="choice"><input name="profile" type="radio" value="companie"><span class="choice-icon" aria-hidden="true">▥</span><span>Reprezentant<br>al unei companii</span><span class="radio-icon"></span></label></fieldset><div class="step-actions"><button class="button button-white" id="to-step-two" type="button">Continuă <span aria-hidden="true">→</span></button></div></div>
+          <div class="step-content" id="step-two" hidden><h3>Ce contribuție ai lua în considerare?</h3><div id="amount-presets" class="amount-presets" aria-label="Valori orientative"></div><label for="amount-input" class="input-label">Sau introdu o sumă în lei</label><input id="amount-input" type="number" min="1" step="1" inputmode="numeric" placeholder="De exemplu, 100" aria-describedby="amount-error"><p id="amount-error" class="input-error" role="alert"></p><div class="step-actions"><button class="button button-ghost" id="back-one" type="button">← Înapoi</button><button class="button button-white" id="to-step-three" type="button">Vezi rezultatul →</button></div></div>
+          <div class="step-content" id="step-three" hidden><h3>Contribuția ta, în perspectivă</h3><div class="result-card"><p class="result-lead">Contribuție ipotetică</p><strong id="result-amount">100 lei</strong><p id="result-message">Gesturile individuale pot deveni un efort colectiv.</p><div class="result-percentage"><strong id="result-percent">0,04%</strong><span>din ținta simulată de 250.000 lei</span></div><p class="demo-notice">ⓘ Aceasta este o simulare. Nu reprezintă o donație efectuată.</p></div><div class="step-actions"><button class="button button-ghost" id="back-two" type="button">← Înapoi</button><a class="button button-white" href="https://fundatia.upb.ro/proiecte-si-evenimente/un-loc-in-camin-poate-schimba-un-destin/" target="_blank" rel="noopener noreferrer">Campania oficială ↗</a></div></div>
+        </div>
+      </div></div>
+    </section>
+    <section id="transparenta" class="transparency section-gap"><div class="container transparency-grid"><div class="section-heading"><h2>Încrederea începe<br>cu informații clare.</h2><span class="underline-swoosh" aria-hidden="true"></span></div><div class="info-card"><span class="info-pill blue-pill">Estimări publicate de Fundație</span><div><strong>1.250.000 lei</strong><p>Prima etapă: proiectare, avize și autorizații</p></div><div><strong>100.000.000 lei</strong><p>Investiția totală estimată</p></div></div><div class="info-card"><span class="info-pill gold-pill">Ipoteze de concurs</span><div><strong>250.000 lei</strong><p>Ținta simulată de fundraising</p></div><div><strong>15.000 lei</strong><p>Bugetul maxim al campaniei</p></div><div><strong>6 luni</strong><p>Perioada campaniei simulate</p></div></div></div></section>
+    <section class="closing"><div class="container closing-grid"><h2>Viitorul cuiva poate<br>începe cu un gest.</h2><p>Descoperă proiectul și află cum poți contribui prin canalele oficiale.</p><div class="closing-actions"><a class="button button-white" href="https://fundatia.upb.ro/proiecte-si-evenimente/un-loc-in-camin-poate-schimba-un-destin/" target="_blank" rel="noopener noreferrer">Vezi campania oficială ↗</a><button class="button button-share" id="share-button" type="button">♧ Distribuie campania</button></div></div><div class="footer-building" aria-hidden="true"></div></section>
+  </main>
+  <footer class="footer"><div class="container"><p>Prototip demonstrativ realizat pentru AI-Powered Business Challenge 2026. Nu colectează donații sau date bancare.</p><div class="footer-links"><a href="model-financiar.html">Explorează modelul financiar →</a><a href="privacy.html">Confidențialitate statistici</a></div></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="analytics-config.js" defer></script>
+  <script src="analytics.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

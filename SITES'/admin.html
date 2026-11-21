@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1041e5">
+  <title>Statistici private | HIPOLITECH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body class="analytics-page">
+  <a class="skip" href="#main">Sari la conținut</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img class="brand-logo" src="assets/hipolitech-logo.svg" alt="HIPOLITECH — Fundația Politehnica"></a><a class="button button-outline" href="index.html">← Înapoi la site</a></div></header>
+  <main id="main" class="analytics-main container">
+    <h1>Statistici private</h1>
+    <p class="analytics-lead">Acces permis doar administratorilor declarați în Supabase. Datele se reîmprospătează automat la 15 secunde.</p>
+    <section id="config-warning" class="analytics-card"><h2>Configurare necesară</h2><p>Completează întâi <code>analytics-config.js</code> cu URL-ul și cheia publică din Supabase, apoi activează statistica.</p></section>
+    <section id="admin-login" class="analytics-card admin-login" hidden>
+      <h2>Autentificare administrator</h2>
+      <form id="login-form" class="admin-form">
+        <label>Email<input id="admin-email" type="email" autocomplete="email" required></label>
+        <label>Parolă<input id="admin-password" type="password" autocomplete="current-password" required></label>
+        <button class="button button-primary" type="submit">Intră în panou</button>
+      </form>
+      <p id="login-status" class="admin-status" role="status" aria-live="polite"></p>
+    </section>
+    <section id="analytics-dashboard" class="analytics-dashboard" hidden>
+      <div class="analytics-card"><div class="header-actions"><h2 style="margin-right:auto">Situație curentă</h2><button id="refresh-stats" class="button button-outline" type="button">Actualizează</button><button id="sign-out" class="button button-outline" type="button">Ieși</button></div><p id="dashboard-status" class="admin-status" role="status" aria-live="polite"></p><div class="analytics-summary"><div class="analytics-metric"><strong id="active-visitors">—</strong><span>Vizitatori activi · ultimele 5 min.</span></div><div class="analytics-metric"><strong id="views-today">—</strong><span>Accesări astăzi</span></div><div class="analytics-metric"><strong id="views-total">—</strong><span>Accesări totale</span></div></div></div>
+      <section class="analytics-card"><h2>Pagini populare · ultimele 30 zile</h2><table class="analytics-table"><thead><tr><th>Pagină</th><th>Accesări</th></tr></thead><tbody id="top-pages"><tr><td colspan="2">Se încarcă…</td></tr></tbody></table><p class="analytics-note">Panoul nu afișează IP-uri, agenți de browser sau identificatori de vizitator.</p></section>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><p>Panou de administrare HIPOLITECH</p><a href="privacy.html">Confidențialitate statistici</a></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="analytics-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
